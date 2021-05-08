@@ -1,0 +1,2 @@
+create keyspace tweet_gram with replication={'class':'SimpleStrategy','replication_factor':'3'}; create table login(email text primary key, first_name text, last_name text,gender text,dob timestamp,password text,time_stamp text);
+create table tweet (email text, tweet_text text, login_status text,primary key(email,tweet_text));
