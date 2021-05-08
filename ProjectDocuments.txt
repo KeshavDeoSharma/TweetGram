@@ -1,0 +1,74 @@
+/loginUser(GET)
+===========================
+input:email and password
+output:true/false
+url:http://localhost:8081/loginUser
+Request:
+{
+    "email":"keshav",
+    "password":"12345"
+}
+==================================
+/saveUser(POST)
+=================================
+input:login object
+output:true/false
+url:http://localhost:8081/saveUser
+Request:
+{
+    "email":"keshavD",
+    "password":"12345",
+    "gender":"male",
+    "firstName":"KeshavD",
+    "lastName":"Sharma",
+    "dob":"1996-03-28"
+}
+===================================
+/updateUser(PUT)
+==================================
+input:email and new password
+output:true
+url:http://localhost:8081/updateUser
+Request:
+{
+    "email":"keshav",
+    "password":"123456"
+}
+=======================================
+/viewAllTweet
+==================================
+input:Null
+output:List of tweets
+url:http://localhost:8081/viewAllTweet
+Response:
+[
+    {
+        "tweetId": {
+            "email": "keshav",
+            "tweetText": "hello hi"
+        },
+        "loginStatus": "y"
+    },
+    {
+        "tweetId": {
+            "email": "keshav",
+            "tweetText": "hi there"
+        },
+        "loginStatus": "Y"
+    }
+]
+============================================
+/postTweet
+=========================================
+input:tweet object
+output:true/false
+url:http://localhost:8081/postTweet
+Request:
+ {
+        "tweetId": {
+            "email": "keshav",
+            "tweetText": "hello hie"
+        },
+        "loginStatus": "y"
+    }
+===========================================
